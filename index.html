@@ -4,12 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Project</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <input type="text" id="petInput" placeholder="Enter pet name" />
-    <button onclick="validateSyntax()">Validate</button>
+    <h2>Pet Adoption Syntax Validator</h2>
+    <div class="note-container">
+      <h4 class="note">
+        Note to all SPCA volunteers
+        <span class="emoji-overlay">
+          📄<span class="emoji-pencil">✏️</span>
+        </span>
+      </h4>
+    </div>
+    <h5>
+      All pet adoption codes start with "pet_" and then the pet's birth year and
+      name
+    </h5>
+    <h5>Example: pet_2015Forrest</h5>
+    <div class="input-section">
+      <input type="text" id="petInput" placeholder="Enter pet name" />
+      <button onclick="validateSyntax()">Validate</button>
+    </div>
     <p id="result"></p>
 
     <script src="script.js"></script>
